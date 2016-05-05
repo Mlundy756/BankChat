@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="distributionType" value="LOCAL" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="gradleHome" value="C:\Program Files\Android\Android Studio\gradle\gradle-2.4" />
+        <option name="gradleJvm" value="1.8" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/converter-gson-2.0.0-beta2" />
+            <option value="$PROJECT_DIR$/engine.io-client-0.6.2" />
+            <option value="$PROJECT_DIR$/gson-2.3.1" />
+            <option value="$PROJECT_DIR$/httpclient-4.5.1" />
+            <option value="$PROJECT_DIR$/httpcore-4.4.3" />
+            <option value="$PROJECT_DIR$/okhttp-2.6.0" />
+            <option value="$PROJECT_DIR$/okhttp-ws-2.5.0" />
+            <option value="$PROJECT_DIR$/okio-1.6.0" />
+            <option value="$PROJECT_DIR$/retrofit-2.0.0-beta2" />
+            <option value="$PROJECT_DIR$/socket.io-client-0.6.2" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

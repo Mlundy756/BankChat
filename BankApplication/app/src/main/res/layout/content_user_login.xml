@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_user_login" tools:context="utsa.edu.BankApplication.UserLogin">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="16dp"
+        android:orientation="vertical" >
+
+
+        <TextView
+            android:text="Username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/userView"
+            android:layout_gravity="center"
+            android:layout_marginTop="70dp"
+            android:textSize="20dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/userLoginText"
+            android:layout_marginLeft="10dp"
+
+            android:layout_toRightOf="@+id/userView"
+            android:hint="Enter Username"
+            android:textSize="20dp"
+            android:layout_alignBottom="@+id/userView" />
+
+        <TextView
+            android:text=""
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/userLoginError"
+            android:layout_toRightOf="@+id/userLoginText"
+            android:textSize="15dp"
+            android:layout_alignBottom="@+id/userView"
+            android:layout_margin="10dp"
+            android:textColor="#db0707" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Password"
+            android:id="@+id/passView"
+            android:layout_alignLeft="@+id/userView"
+            android:layout_marginTop="12dp"
+            android:textSize="20dp"
+            android:layout_below="@+id/userView"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/passLoginText"
+            android:hint="Enter Password"
+            android:textSize="20dp"
+            android:password="true"
+            android:layout_alignLeft="@+id/userLoginText"
+            android:layout_toRightOf="@+id/passView"
+            android:layout_alignBottom="@+id/passView"/>
+
+        <TextView
+            android:text=""
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/passLoginError"
+            android:layout_toRightOf="@+id/passLoginText"
+            android:textSize="20dp"
+            android:layout_alignBottom="@+id/passView"
+            android:layout_margin="10dp"
+            android:textColor="#db0707" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:id="@+id/login"
+            android:onClick="onLogin"
+            android:layout_below="@+id/passView"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="User Login"
+            android:id="@+id/textView2"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

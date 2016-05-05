@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".API.MainActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="16dp"
+        android:gravity="center_vertical|center">
+
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create User"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="70dp"
+            android:textAlignment="center"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/firstNameUserView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="First Name"
+            android:textSize="20dp"
+            android:layout_marginTop="12dp"
+            android:layout_below="@+id/textView2"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:id="@+id/firstNameText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Enter First Name"
+            android:textSize="20dp"
+            android:layout_below="@+id/textView2"
+            android:layout_alignLeft="@+id/firstNameUserView"
+            android:layout_alignStart="@+id/middleNameUserText" />
+
+        <TextView
+            android:id="@+id/middleNameUserView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Middle Name"
+            android:layout_marginTop="12dp"
+            android:textSize="20dp"
+            android:layout_below="@+id/firstNameUserView"
+            android:layout_alignLeft="@+id/create"
+            android:layout_alignStart="@+id/create" />
+
+        <EditText
+            android:id="@+id/middleNameUserText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Enter Middle Name"
+            android:textSize="20dp"
+            android:layout_below="@+id/firstNameUserView"
+            android:layout_toRightOf="@+id/middleNameUserView"
+            android:layout_toEndOf="@+id/middleNameUserView" />
+
+       <TextView
+            android:id="@+id/lastNameUserView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+           android:layout_below="@+id/middleNameUserView"
+            android:text="Last Name"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/lastNameUserText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Enter Last Name"
+            android:textSize="20dp"
+            android:layout_below="@+id/middleNameUserView"
+            android:layout_alignLeft="@+id/middleNameUserText"
+            android:layout_alignStart="@+id/middleNameUserText" />
+
+        <TextView
+            android:id="@+id/emailUserView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lastNameUserView"
+            android:layout_marginTop="12dp"
+            android:text="Email"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/emailUserText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Enter Email"
+            android:textSize="20dp"
+            android:layout_toRightOf="@+id/emailUserView"
+            android:layout_below="@+id/lastNameUserView"
+            android:layout_toEndOf="@+id/middleNameUserView" />
+
+        <TextView
+            android:id="@+id/passUserView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/emailUserView"
+            android:layout_marginTop="12dp"
+            android:text="Password"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/passUserText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Enter Password"
+            android:password="true"
+            android:textSize="20dp"
+            android:layout_below="@+id/emailUserView"
+            android:layout_alignLeft="@+id/emailUserText"
+            android:layout_alignStart="@+id/emailUserText" />
+
+        <Button
+            android:id="@+id/create"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onCreateUser"
+            android:text="Create"
+            android:layout_below="@+id/passUserView"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onLogin"
+            android:text="Already have an account?"
+            android:layout_gravity="right"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/create"
+             />
+
+
+    </RelativeLayout>
+
+</ScrollView>
